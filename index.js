@@ -42,9 +42,9 @@ function valider3() {
 };
 
 function valider4() {  
-  let æ = document.getElementById("ord4").value;  
+  let e = document.getElementById("ord4").value;  
   let text4;
-  if (æ != "ENCRYPTED") {
+  if (e != "ENCRYPTED") {
     text4 = "Feil";
     document.getElementById("feil4").innerHTML = text4;
     return false;
@@ -52,14 +52,14 @@ function valider4() {
   } else {
     text4 = "Riktig!";
     document.getElementById("feil4").innerHTML = text4;
-    return false;
+    return true;
   }
 };
 
 function valider5() {  
-  let ø = document.getElementById("ord5").value; 
+  let d = document.getElementById("ord5").value; 
   let text5;
-  if (ø != "FORENSICS") {
+  if (d != "FORENSICS") {
     text5 = "Feil";
     document.getElementById("feil5").innerHTML = text5;
     return false;
@@ -71,9 +71,9 @@ function valider5() {
 };
   
 function valider6() {  
-  let å = document.getElementById("ord6").value;  
+  let c = document.getElementById("ord6").value;  
   let text6;
-  if (å != "DATABASE") {
+  if (c != "DATABASE") {
     text6 = "Feil";
     document.getElementById("feil6").innerHTML = text6;
     return false;
@@ -104,10 +104,11 @@ function valider7() {
 };
 function valider(){
     let text = "Bra jobbet du fikk alt riktig! Følg denne linken for å søke.";
+    console.log(valider1() && valider2() && valider3() && valider4() && valider5() && valider6() && valider7());
     if(valider1() && valider2() && valider3() && valider4() && valider5() && valider6() && valider7()){
     document.getElementById("statusmelding").innerHTML = text;
-    alert("Bra jobbet du fikk alt riktig! Følg denne linken for å søke.");
-    console.log(valider1() && valider2() && valider3() && valider4() && valider5() && valider6() && valider7());
+    
+    
     
 }
 };
