@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stillingsannonse</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header></header>
+    <h1 id="overskrift">Skriv inn ordene du fant nederst i stillingsannonsen i feltene under</h1>
+    <table>
+        <tr>
+            <td>Første ord  <input type="text" id="ord1" onchange="valider1()"/></td>
+            <td><span id="feil1"></span></td>
+        </tr>
+        <tr>
+            <td>Andre ord  <input type="text" id="ord2" onchange="valider2()"/></td>
+            <td><span id="feil2"></span></td>
+        </tr>
+        <tr>
+            <td>Tredje ord  <input type="text" id="ord3" onchange="valider3()"/></td>
+            <td><span id="feil3"></span></td>
+        </tr>
+        <tr>
+            <td>Fjerde ord  <input type="text" id="ord4" onchange="valider4()"/></td>
+            <td><span id="feil4"></span></td>
+        </tr>
+        <tr>
+            <td>Femte ord  <input type="text" id="ord5" onchange="valider5()"/></td>
+            <td><span id="feil5"></span></td>
+        </tr>
+        <tr>
+            <td>Sjette ord  <input type="text" id="ord6" onchange="valider6()"/></td>
+            <td><span id="feil6"></span></td>
+        </tr>
+        <tr>
+            <td>Sjuende ord <input type="text" id="ord7" onchange="valider7()"/></td>
+            <td><span id="feil7"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="Valider" onclick="valider()">Sjekk svaret</button></td>
+            
+        </tr>
+        <tr><td><span id="statusmelding"></span></td></tr>
+
+    </table>
+</body>
+</html>
