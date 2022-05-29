@@ -103,10 +103,11 @@ function valider7() {
   
 };
 function valider(){
-    let text = "Bra jobbet du fikk alt riktig! Følg denne linken for å søke.";
+    let text = "Bra jobbet du fikk alt riktig!<br> Følg denne linken for å søke.";
+    result = "<a href ='https://google.com'>" + text + "</a>";
     console.log(valider1() && valider2() && valider3() && valider4() && valider5() && valider6() && valider7());
     if(valider1() && valider2() && valider3() && valider4() && valider5() && valider6() && valider7()){
-    document.getElementById("statusmelding").innerHTML = text;
+    document.getElementById("statusmelding").innerHTML = result;
     
     
     
